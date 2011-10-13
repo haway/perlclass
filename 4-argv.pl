@@ -1,8 +1,13 @@
 #!/usr/bin/perl
 #
+# ARGV 是專門存放參數的陣列
+# 
 
-print "I have 0 ~ $#ARGV ARGV\n";
+print "argv total ", $#ARGV +1 ,"\n";
 
+print "I have 0 - $#ARGV ARGV\n";
+
+# 沒有輸入參數的話 ARGV = -1
 if ( $#ARGV < 0 ){
 	print( "Please give me some argv, exit!!", "\n" );
 }
