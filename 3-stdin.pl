@@ -14,11 +14,13 @@ if ( $line eq 'n' ){
 
 print "Input \"Exit\" for quit application:";
 
-while( <STDIN> ){
+while( my $kk = <STDIN> ){
 	
-	print "Your Keyin is : $_";
+	print "Your Keyin is : $kk";
+	
+	chomp( $kk );
 
-	if ( $_ =~ /exit/i ){
+	if ( $kk eq 'exit' ){
 		exit;
 	}
 }
