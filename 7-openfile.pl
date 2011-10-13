@@ -2,15 +2,23 @@
 #
 #
 
-if ( -f $ARGV[0] ){
-	print "Give me a file path";
+$filepath = shift;
+
+
+if ( ! -e $filepath ){
+	print "Give me a file path\n";
 	exit;
 }
 
-open( OO, "< $ARGV[0]" );
+print "open file: $filepath\n";
 
+open( OO, "< $filepath" );
 while( my $f = <OO> ){
 	print $f;
 }
-	
 
+#while( <OO> ){
+	#print ;
+#}
+
+close OO;

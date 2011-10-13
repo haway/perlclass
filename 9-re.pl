@@ -19,7 +19,6 @@ $Str =~ s/This/That/;
 print "Your word is: $Str\n";
 
 # Plesae Change "Book" to "Dog", What RE you shuld do?
-$Str =~ s/Book/Dog/i;
 
 print "Your word is: $Str\n";
 
