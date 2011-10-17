@@ -25,3 +25,13 @@ foreach ( %hStr1 ){
 	print "\$k = $_\n";
 }
 
+
+while( <> ){
+
+        print "Your Keyin is : $_";
+
+        chomp;
+
+        fun1 if ( $_ eq 'exit' );
+}
+
