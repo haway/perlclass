@@ -12,6 +12,7 @@ sub myprint1{
 	$Word = "Not Book";
 }
 
+
 myprint2( $Word );
 
 sub myprint2{
@@ -37,7 +38,7 @@ sub myprint4{
 	my $str2 = shift;
 	my $str3 = shift;
 
-	# my ( $str1, $str2, $str3 ) = @_;
+	my ( $str1, $str2, $str3 ) = @_;
 
 	print "Sub4 => Str1: $str1,\tStr2: $str2,\tStr3: $str3\n";
 }

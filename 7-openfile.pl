@@ -21,4 +21,7 @@ while( my $f = <OO> ){
 	#print ;
 #}
 
+
+print OO, "YA";
+
 close OO;
